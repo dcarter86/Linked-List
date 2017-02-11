@@ -1,0 +1,52 @@
+//Daniel Carter
+//Lab 2: Lab 16.1 basic Linked List Operations
+
+
+#include <iostream>
+
+using namespace std;
+
+struct NodeType {
+       int info;
+       NodeType * link;
+};
+
+
+int main()
+{
+	
+	NodeType *ptr, *list;
+	ptr = head;
+
+
+	ptr = new NodeType; // this node value is 22
+	ptr->info = 22;
+	ptr->nlink = list;
+	list = ptr;
+
+	ptr = new NodeType;// this node value is 16
+	ptr->info = 16;
+	ptr->nlink = nullptr;
+	list = ptr;
+
+	ptr = new NodeType;// this node value is 28
+	ptr->info = 28;
+	ptr->nlink = nullptr;
+	list->link = ptr;
+	
+	ptr = new NodeType;// this node value is 52
+	ptr->info = 52;
+	ptr->nlink = list;
+	list = ptr;
+
+while(ptr != nullptr)
+{
+cout << ptr -> list<<endl;
+ptr = ptr -> nlink;
+}
+	
+
+
+system("pause";
+return 0;
+}
